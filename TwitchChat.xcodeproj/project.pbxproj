@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		4417B5E2269B47DA009827E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4417B5E0269B47DA009827E1 /* Main.storyboard */; };
 		4417B5E4269B47DC009827E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4417B5E3269B47DC009827E1 /* Assets.xcassets */; };
 		4417B5E7269B47DC009827E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4417B5E5269B47DC009827E1 /* LaunchScreen.storyboard */; };
+		443E902E269F0007007D29FA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E902C269F0006007D29FA /* CustomCell.swift */; };
+		443E902F269F0007007D29FA /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443E902D269F0007007D29FA /* CustomCell.xib */; };
+		5A5249BBB5BB0F8EA298BFF5 /* Pods_TwitchChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB4EA6C054D46B5C46DDF93 /* Pods_TwitchChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		4417B5E3269B47DC009827E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4417B5E6269B47DC009827E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4417B5E8269B47DC009827E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443E902C269F0006007D29FA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		443E902D269F0007007D29FA /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		5DB4EA6C054D46B5C46DDF93 /* Pods_TwitchChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69869E6FEA6E33E2F41CA9D6 /* Pods-TwitchChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchChat.debug.xcconfig"; path = "Target Support Files/Pods-TwitchChat/Pods-TwitchChat.debug.xcconfig"; sourceTree = "<group>"; };
+		E36A9C04EEB90948901DC0D8 /* Pods-TwitchChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchChat.release.xcconfig"; path = "Target Support Files/Pods-TwitchChat/Pods-TwitchChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A5249BBB5BB0F8EA298BFF5 /* Pods_TwitchChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		199610F09DFE267DB9302FDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69869E6FEA6E33E2F41CA9D6 /* Pods-TwitchChat.debug.xcconfig */,
+				E36A9C04EEB90948901DC0D8 /* Pods-TwitchChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4417B5CE269B47DA009827E1 = {
 			isa = PBXGroup;
 			children = (
 				4417B5D9269B47DA009827E1 /* TwitchChat */,
 				4417B5D8269B47DA009827E1 /* Products */,
+				199610F09DFE267DB9302FDD /* Pods */,
+				F518041B348F13D63D206F12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +83,18 @@
 				4417B5E3269B47DC009827E1 /* Assets.xcassets */,
 				4417B5E5269B47DC009827E1 /* LaunchScreen.storyboard */,
 				4417B5E8269B47DC009827E1 /* Info.plist */,
+				443E902C269F0006007D29FA /* CustomCell.swift */,
+				443E902D269F0007007D29FA /* CustomCell.xib */,
 			);
 			path = TwitchChat;
+			sourceTree = "<group>";
+		};
+		F518041B348F13D63D206F12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DB4EA6C054D46B5C46DDF93 /* Pods_TwitchChat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4417B5EB269B47DC009827E1 /* Build configuration list for PBXNativeTarget "TwitchChat" */;
 			buildPhases = (
+				FDDB4FED7A2C0413BA883C26 /* [CP] Check Pods Manifest.lock */,
 				4417B5D3269B47DA009827E1 /* Sources */,
 				4417B5D4269B47DA009827E1 /* Frameworks */,
 				4417B5D5269B47DA009827E1 /* Resources */,
+				9B055CB7843EFB4FA5A01EA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +158,54 @@
 			files = (
 				4417B5E7269B47DC009827E1 /* LaunchScreen.storyboard in Resources */,
 				4417B5E4269B47DC009827E1 /* Assets.xcassets in Resources */,
+				443E902F269F0007007D29FA /* CustomCell.xib in Resources */,
 				4417B5E2269B47DA009827E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B055CB7843EFB4FA5A01EA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwitchChat/Pods-TwitchChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwitchChat/Pods-TwitchChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwitchChat/Pods-TwitchChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDDB4FED7A2C0413BA883C26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitchChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4417B5D3269B47DA009827E1 /* Sources */ = {
@@ -139,6 +214,7 @@
 			files = (
 				4417B5DF269B47DA009827E1 /* ViewController.swift in Sources */,
 				4417B5DB269B47DA009827E1 /* AppDelegate.swift in Sources */,
+				443E902E269F0007007D29FA /* CustomCell.swift in Sources */,
 				4417B5DD269B47DA009827E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +359,7 @@
 		};
 		4417B5EC269B47DC009827E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69869E6FEA6E33E2F41CA9D6 /* Pods-TwitchChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +378,7 @@
 		};
 		4417B5ED269B47DC009827E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E36A9C04EEB90948901DC0D8 /* Pods-TwitchChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -76,17 +76,41 @@
 		4417B5D9269B47DA009827E1 /* TwitchChat */ = {
 			isa = PBXGroup;
 			children = (
+				44DA71C3269F0A4800BF73A8 /* View */,
+				44DA71C2269F0A4200BF73A8 /* Model */,
+				44DA71C1269F0A3100BF73A8 /* Controller */,
 				4417B5DA269B47DA009827E1 /* AppDelegate.swift */,
 				4417B5DC269B47DA009827E1 /* SceneDelegate.swift */,
-				4417B5DE269B47DA009827E1 /* ViewController.swift */,
 				4417B5E0269B47DA009827E1 /* Main.storyboard */,
 				4417B5E3269B47DC009827E1 /* Assets.xcassets */,
 				4417B5E5269B47DC009827E1 /* LaunchScreen.storyboard */,
 				4417B5E8269B47DC009827E1 /* Info.plist */,
-				443E902C269F0006007D29FA /* CustomCell.swift */,
-				443E902D269F0007007D29FA /* CustomCell.xib */,
 			);
 			path = TwitchChat;
+			sourceTree = "<group>";
+		};
+		44DA71C1269F0A3100BF73A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4417B5DE269B47DA009827E1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		44DA71C2269F0A4200BF73A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				443E902C269F0006007D29FA /* CustomCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44DA71C3269F0A4800BF73A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				443E902D269F0007007D29FA /* CustomCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F518041B348F13D63D206F12 /* Frameworks */ = {
